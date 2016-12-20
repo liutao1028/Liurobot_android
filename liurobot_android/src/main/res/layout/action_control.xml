@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background" >
+
+        <ListView
+            android:id="@+id/mapslist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="100dp"
+            android:layout_toLeftOf="@+id/button1" >
+
+</ListView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="返回"
+        android:background="@drawable/button"
+        android:onClick="onclick" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="新建动作" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/button1"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/button1"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="删除动作" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignTop="@+id/mapslist"
+        android:text="当前选择" 
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/txt_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="50dp"
+        android:text="请点击选择" />
+
+</RelativeLayout>

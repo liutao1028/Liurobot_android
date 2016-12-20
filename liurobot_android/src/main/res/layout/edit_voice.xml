@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundbig" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button"
+        android:text="返回" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button"
+        android:text="完成" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="编辑语音"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="当前名称"
+        android:textColor="#ff6a6a"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:ems="10"
+        android:hint="请输入您的问题" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:ems="10"
+        android:hint="请输入该问题的回答" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignLeft="@+id/textView5"
+        android:gravity="center"
+        android:text="回答:"
+        android:textColor="#7fffd4"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="当前ID"
+        android:textColor="#ff6a6a"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText4"
+        android:layout_alignBottom="@+id/editText4"
+        android:layout_alignLeft="@+id/textView2"
+        android:gravity="center"
+        android:text="问题:"
+        android:textColor="#7fffd4"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText4"
+        android:layout_alignLeft="@+id/textView4"
+        android:gravity="center"
+        android:text="语音  I  D:"
+        android:textColor="#7fffd4"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_toRightOf="@+id/button1"
+        android:gravity="center"
+        android:text="语音名称:"
+        android:textColor="#7fffd4"
+        android:textSize="20dp" />
+
+</RelativeLayout>

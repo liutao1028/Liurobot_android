@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+    android:orientation="vertical" >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="5"
+    >
+    <com.liutao.liurobot_android.entity.MutiView
+        android:id="@+id/iv_tuceng01"
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+         />
+    <ToggleButton 
+        android:id="@+id/toggbtn_drawline_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textOn="移动模式"
+        android:textOff="绘图模式"
+        />
+    <EditText 
+        android:id="@+id/et_new_coord_name"
+        android:hint="请输入新建坐标名称"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toggbtn_drawline_on"
+        android:layout_margin="20dp"
+        />
+  </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/coor_linear"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_coor_x"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="X:sasfsasa" />
+
+        <TextView
+            android:id="@+id/tv_coor_y"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Y:sasfsasa" />
+
+        <TextView
+            android:id="@+id/tv_coor_z"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Z:sasfsasa" />
+
+        <TextView
+            android:id="@+id/tv_coor_w"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="W:sasfsasa" />
+
+        <TextView
+            android:id="@+id/tv_coor_dir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dir:sasfsasa" />
+    </LinearLayout>
+	<RelativeLayout 
+	    android:id="@+id/coor_linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+	    >
+    <Button
+        android:id="@+id/btn_coor_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_centerInParent="true"
+        android:text="  保   存   "
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_coor_back"
+        android:layout_width="wrap_content"
+        android:background="@drawable/button"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:text="  返   回  "
+        android:textSize="20sp" />
+</RelativeLayout>
+</LinearLayout>

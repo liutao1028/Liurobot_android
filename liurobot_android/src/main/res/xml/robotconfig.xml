@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?><config>
+<medialibrary>
+    <medias name="好声音">
+        <media>我的歌声里.mp3:2</media>
+        <media>春天里.mp3:0</media> 
+        <media>贴图1.png:5</media>   
+    </medias>
+    <medias name="周杰伦">
+        <media>双截棍.mp3:0</media>
+        <media>以父之名.mp3:6</media> 
+        <media>演唱会.rmvb:0</media>   
+    </medias>
+    <medias name="广告">
+        <media>优酷广告.avi:66</media>
+        <media>音乐.mp3:33</media>    
+    </medias>
+</medialibrary>
+<voicelibrary>
+        
+    
+    
+<voice name="实验语音2" isemploy="yes" id="001">
+<question>你好</question>
+<response>5555</response>
+</voice>
+<voice name="语音1" isemploy="yes" id="002">
+<question>我是你爸爸</question>
+<response>爸爸好！</response>
+</voice>
+<voice name="语音哈哈" isemploy="yes" id="003">
+<question>你是谁</question>
+<response>我是你爸爸</response>
+</voice>
+<voice name="实验语音3" isemploy="yes" id="004">
+<question>我帅吗</question>
+<response>帅</response>
+</voice>
+<voice name="28日实验语音" isemploy="yes" id="005">
+<question>刘涛是谁</question>
+<response>人渣</response>
+</voice>
+<voice name="28日实验语音" isemploy="yes" id="006">
+<question>李雄康是谁</question>
+<response>人渣</response>
+</voice>
+<voice name="29日实验语音1" isemploy="yes" id="007">
+<question>盛世科技</question>
+<response>盛仕智能科技有限公司是一家专门研发生产机器人的高科技公司</response>
+</voice>
+<voice name="29日实验语音1" isemploy="yes" id="008">
+<question>你家在哪儿</question>
+<response>我家在银川科技大厦4楼</response>
+</voice>
+<voice name="29日实验语音1" isemploy="yes" id="009">
+<question>你真聪明！</question>
+<response>谢谢夸奖</response>
+</voice>
+<voice name="29日实验语音1" isemploy="yes" id="010">
+<question>谢谢！</question>
+<response>不客气，这是我应该做的</response>
+</voice>
+<voice name="29日实验语音1" isemploy="yes" id="011">
+<question>你喜欢吃什么？</question>
+<response>我是机器人，我不吃饭哒</response>
+</voice>
+<voice name="29日实验语音1" isemploy="yes" id="012">
+<question>今天吃什么？</question>
+<response>红烧土豆吧</response>
+</voice>
+<voice name="29日实验语音1" isemploy="yes" id="013">
+<question>好饿啊！</question>
+<response>给你叫个外卖吧</response>
+</voice>
+<voice name="29日实验语音1" isemploy="yes">
+<question>你好可爱啊</question>
+<response>哎呀~夸的我都不好意思啦</response>
+</voice>
+<voice name="29日实验语音1" isemploy="yes">
+<question>李云航是谁？</question>
+<response>不对，应该是李运舵</response>
+</voice>
+</voicelibrary>
+<actionlibrary>   
+<actions name="29日实验动作1">
+<action>前进:6:6</action>
+<action>后退:0:0</action>
+<action>左转:0:0</action>
+<action>右转:0:0</action>
+<action>顺时针旋转:0:0</action>
+</actions>
+<actions name="29日实验动作2">
+<action>左转:0:0</action>
+<action>顺时针旋转:0:0</action>
+<action>逆时针旋转:0:0</action>
+</actions>
+<actions name="29日实验动作3">
+<action>逆时针旋转:0:0</action>
+<action>右转:0:0</action>
+<action>左转:0:0</action>
+</actions>
+</actionlibrary>
+<maplibrary>
+  <map name="1号地图" id="1480661532904" note="一楼大厅地图" url="/storage/sdcard0/1480661532904.png">
+    <coords>
+        <coord name="1地图坐标1" id="001">
+            <x>100011</x>
+            <y>100012</y>
+            <z>100013</z>
+            <w>100014</w>
+        </coord>
+        <coord name="1地图坐标2" id="002">
+            <x>100021</x>
+            <y>100022</y>
+            <z>100023</z>
+            <w>100024</w>
+        </coord>
+        
+		<coord name="坐标xxxxx" id="003">
+			<x>0.33940658</x>
+			<y>0.24354705</y>
+			<z>Z:sasfsasa</z>
+			<w>W:sasfsasa</w>
+			<dir>1.7841824</dir>
+			</coord>
+		<coord name="坐标xxxxx" id="004">
+			<x>0.4508069</x>
+			<y>0.16361366</y>
+			<z>0.7653004</z>
+			<w>W:sasfsasa</w>
+			<dir>0.7653004</dir>
+			</coord>
+		<coord name="坐标xxxxx" id="005">
+			<x>X:sasfsasa</x>
+			<y>Y:sasfsasa</y>
+			<z>Dir:sasfsasa</z>
+			<w>W:sasfsasa</w>
+			<dir>Dir:sasfsasa</dir>
+			</coord>
+		<coord name="坐标xxxxx" id="006">
+			<x>X:sasfsasa</x>
+			<y>Y:sasfsasa</y>
+			<z>Dir:sasfsasa</z>
+			<w>W:sasfsasa</w>
+			<dir>Dir:sasfsasa</dir>
+		</coord>
+	</coords>
+    <event name="1号地图事件" id="1480661532904 " voice="003">
+		<contentname>action:002</contentname>
+		<contentname>media:xxx.mp3</contentname>  
+		<contentname>media:xxx.mp3</contentname>
+    </event>
+    <event name="1号地图讲解事件" id="1480661532904" voice="004">
+        <contentname>action:002</contentname>
+		<contentname>media:xxx.mp3</contentname>  
+		<contentname>media:xxx.mp3</contentname>
+    </event> 
+  <event name="ffff" id="1480661532904" voice="001">
+  <contentname>media:/sdcard/Android/data/com.estrongs.android.pop/.app_icon_back/siir.es.adbWireless.png:0</contentname>
+  <contentname>media:/sdcard/msc/iat.wav:0</contentname>
+  </event>
+  </map>
+  
+  <map name="3号地图" id="1480661532904" note="三楼大厅地图" url="/storage/sdcard0/1480661532904.png">
+    <coords>
+        <coord name="3地图坐标1">
+            <x>300011</x>
+            <y>300012</y>
+            <z>300013</z>
+            <w>300014</w>
+        </coord>
+        <coord name="3地图坐标2">
+            <x>300021</x>
+            <y>300022</y>
+            <z>300023</z>
+            <w>300024</w>
+        </coord>
+        <coord name="3地图坐标3">
+            <x>300031</x>
+            <y>300032</y>
+            <z>300033</z>
+            <w>300034</w>
+        </coord>
+		<coord name="坐标xxxxx">
+			<x>0.33940658</x>
+			<y>0.24354705</y>
+			<z>Z:sasfsasa</z>
+			<w>W:sasfsasa</w>
+			<dir>1.7841824</dir>
+			</coord>
+		<coord name="坐标xxxxx">
+			<x>0.4508069</x>
+			<y>0.16361366</y>
+			<z>0.7653004</z>
+			<w>W:sasfsasa</w>
+			<dir>0.7653004</dir>
+		</coord>
+		<coord name="坐标xxxxx">
+			<x>X:sasfsasa</x>
+			<y>Y:sasfsasa</y>
+			<z>Dir:sasfsasa</z>
+			<w>W:sasfsasa</w>
+			<dir>Dir:sasfsasa</dir>
+		</coord>
+		<coord name="坐标xxxxx">
+			<x>X:sasfsasa</x>
+			<y>Y:sasfsasa</y>
+			<z>Dir:sasfsasa</z>
+			<w>W:sasfsasa</w>
+			<dir>Dir:sasfsasa</dir>
+		</coord>
+	</coords>
+       
+     
+  <event name="3号地图实验事件1" voice="001" id="">
+  <contentname>action:29日实验动作1:0</contentname>
+  <contentname>coord:3地图坐标1:2</contentname>
+  <contentname>media:/sdcard/Android/data/com.netease.onmyoji.qihoo/files/netease/onmyoji/res/movie/baiguiyexing.mp4:0</contentname>
+  <contentname>media:/sdcard/BigNoxHD/cache/com_example_nxss_system_ui.png:0</contentname>
+  </event>
+  </map>
+</maplibrary>
+</config>

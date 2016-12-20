@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="40dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:text="正在应用地图，请稍候..." />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="地图应用成功！"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/button"
+        android:text="测试-use" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="当前地图为：测试地图1"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/button"
+        android:text="返回" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="重试"
+        android:background="@drawable/button"/>
+
+</RelativeLayout>

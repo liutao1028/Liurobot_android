@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundbig" >
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="请输入您的问题"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="请输入该问题的答案"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="输入该问题的名称"
+        android:inputType="textPersonName"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText2"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_toLeftOf="@+id/editText2"
+        android:gravity="center"
+        android:text="名称:"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/editText4"
+        android:background="@drawable/button"
+        android:text="返回" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignRight="@+id/editText4"
+        android:background="@drawable/button"
+        android:text="保存" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignLeft="@+id/textView4"
+        android:gravity="center"
+        android:text="问题:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText4"
+        android:layout_alignBottom="@+id/editText4"
+        android:layout_alignLeft="@+id/textView3"
+        android:gravity="center"
+        android:text="回答:"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="新的语音"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+</RelativeLayout>

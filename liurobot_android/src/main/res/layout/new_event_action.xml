@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background" >
+
+    <ListView
+        android:id="@+id/listview_newevent_event"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_new_event_save"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginLeft="30dp" >
+    </ListView>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_new_event_save"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView1"
+        android:layout_toLeftOf="@+id/textView1"
+        android:background="@drawable/button"
+        android:text="保存" 
+        android:onClick="onclick"/>
+
+    <Button
+        android:id="@+id/btn_new_event_back"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/btn_new_event_save"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/button"
+        android:text="返回"
+        android:onClick="onclick" />
+
+    <ListView
+        android:id="@+id/listview_newevent_content"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_new_event_back"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/listview_newevent_event"
+        android:layout_marginRight="30dp" >
+    </ListView>
+
+    <EditText
+        android:id="@+id/et_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btn_new_event_back"
+        android:layout_toRightOf="@+id/btn_new_event_save"
+        android:ems="10"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_new_event_jiandelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_count"
+        android:layout_toLeftOf="@+id/et_count"
+        android:background="@drawable/lift"
+        android:onClick="onclick" />
+
+    <Button
+        android:id="@+id/btn_new_event_jiadelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_count"
+        android:layout_alignLeft="@+id/btn_new_event_back"
+        android:background="@drawable/right"
+        android:onClick="onclick" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_count"
+        android:layout_centerHorizontal="true"
+        android:text="设置延时秒数" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_new_event_jiandelay"
+        android:layout_alignRight="@+id/btn_new_event_jiadelay"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_name"
+        android:layout_centerHorizontal="true"
+        android:text="事件保存名称" />
+
+    <Button
+        android:id="@+id/btn_new_event_action"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn_pic"
+        android:layout_alignRight="@+id/btn_pic"
+        android:layout_alignTop="@+id/btn_new_event_back"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="动作" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:text="当前选择语音" />
+
+    <Button
+        android:id="@+id/btn_mp3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/listview_newevent_content"
+        android:layout_above="@+id/listview_newevent_content"
+        android:background="@drawable/icon"
+        android:onClick="onclick"
+        android:visibility="invisible"
+        android:text="音乐" />
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/listview_newevent_content"
+        android:layout_above="@+id/listview_newevent_content"
+        android:background="@drawable/icon"
+        android:onClick="onclick"
+        android:visibility="invisible"
+        android:text="视频" />
+
+    <Button
+        android:id="@+id/btn_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/listview_newevent_content"
+        android:layout_toRightOf="@+id/btn_mp3"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/icon"
+        android:onClick="onclick"
+        android:visibility="invisible"
+        android:text="图片" />
+
+    <Button
+        android:id="@+id/btn_new_event_coord"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn_mp3"
+        android:layout_alignTop="@+id/btn_new_event_back"
+        android:layout_toLeftOf="@+id/btn_pic"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="坐标" />
+
+    <Button
+        android:id="@+id/btn_new_event_media"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn_video"
+        android:layout_alignRight="@+id/btn_video"
+        android:layout_alignTop="@+id/btn_new_event_back"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="媒体" />
+
+    <TextView
+        android:id="@+id/tv_selectlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_count"
+        android:layout_centerHorizontal="true"
+        android:text="动作" />
+
+</RelativeLayout>

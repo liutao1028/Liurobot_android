@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.liutao.liurobot_android"
+        minSdkVersion 14
+        targetSdkVersion 21
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':usbSerialLibrary')
+    compile files('libs/baidumapapi_base_v4_0_0.jar')
+    compile files('libs/baidumapapi_cloud_v4_0_0.jar')
+    compile files('libs/baidumapapi_map_v4_0_0.jar')
+    compile files('libs/baidumapapi_radar_v4_0_0.jar')
+    compile files('libs/baidumapapi_search_v4_0_0.jar')
+    compile files('libs/baidumapapi_util_v4_0_0.jar')
+    compile files('libs/locSDK_6.13.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/Sunflower.jar')
+}

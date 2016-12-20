@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundbig" >
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignRight="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:onClick="onclick2"
+        android:text="语音" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:onClick="onclick2"
+        android:text="动作" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button"
+        android:onClick="onclick2"
+        android:text="媒体" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button"
+        android:onClick="onclick2"
+        android:text="返回" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/action"
+        android:onClick="onclick2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginRight="100dp"
+        android:layout_toLeftOf="@+id/button1"
+        android:background="@drawable/voice"
+        android:onClick="onclick2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/button1"
+        android:background="@drawable/media"
+        android:onClick="onclick2" />
+
+</RelativeLayout>

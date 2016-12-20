@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background"
+     >
+    <ListView
+        android:id="@+id/lv_maplist"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_maps_back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/iv_mapsuolue"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_maps_back"
+        android:src="@drawable/skyblue_logo_sohumicroblog_checked" />
+
+    <Button
+        android:id="@+id/btn_yingyong"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/iv_mapsuolue"
+        android:layout_alignRight="@+id/iv_mapsuolue"
+        android:layout_below="@+id/iv_mapsuolue"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="应用" />
+    <Button
+        android:id="@+id/btn_getnowmap"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+       	android:layout_toRightOf="@id/btn_yingyong"
+        android:layout_below="@+id/iv_mapsuolue"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="设置当前地图" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_mapsuolue"
+        android:layout_below="@+id/btn_yingyong"
+        android:layout_marginTop="20dp"
+        android:text="地图名称:"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="地图描述:"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tv_mapname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="请选择"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/tv_mapnote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/tv_mapname"
+        android:text="请选择"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/btn_maps_back"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="返回" />
+
+    <Button
+        android:id="@+id/btn_maps_edit_map"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/tv_mapname"
+        android:layout_toRightOf="@+id/iv_mapsuolue"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="编辑地图" />
+
+    <Button
+        android:id="@+id/btn_maps_new_map"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btn_maps_back"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="新建地图" />
+
+    <Button
+        android:id="@+id/btn_maps_delete_map"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn_maps_edit_map"
+        android:layout_below="@+id/btn_maps_edit_map"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="删除地图" />
+
+    <Button
+        android:id="@+id/btn_maps_coord_manager"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btn_maps_delete_map"
+        android:layout_below="@+id/btn_maps_delete_map"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:textSize="20sp"
+        android:onClick="onclick"
+        android:text="坐标管理" />
+
+</RelativeLayout>

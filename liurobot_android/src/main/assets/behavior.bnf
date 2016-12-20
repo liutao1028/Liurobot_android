@@ -1,0 +1,8 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar behavior;
+!slot <direct>;
+!slot <action>;
+!start <commands>;
+<commands>:[向]<direct><action>;
+<direct>:前|后|左|右|转圈;
+<action>:走|转;

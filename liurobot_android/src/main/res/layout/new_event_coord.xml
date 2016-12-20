@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background" >
+
+    <ListView
+        android:id="@+id/lv_new_event_coor_event"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginLeft="30dp" >
+    </ListView>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:text="当前选择语音" />
+	
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="50dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textView1"
+        android:layout_toLeftOf="@+id/textView1"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="保存" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/button"
+        android:onClick="onclick"
+        android:text="返回" />
+
+    <ListView
+        android:id="@+id/lv_new_event_coor_content"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/lv_new_event_coor_event"
+        android:layout_marginRight="30dp" >
+    </ListView>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toRightOf="@+id/button1"
+        android:ems="10"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_toLeftOf="@+id/editText1"
+        android:background="@drawable/lift"
+        android:onClick="onclick" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignLeft="@+id/button2"
+        android:background="@drawable/right"
+        android:onClick="onclick" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_centerHorizontal="true"
+        android:text="设置延时秒数" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignRight="@+id/button4"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:text="事件保存名称" />
+
+</RelativeLayout>

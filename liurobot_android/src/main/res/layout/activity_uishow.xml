@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.liutao.liurobot_android.view.DiyView
+        android:id="@+id/diy_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <VideoView
+        android:id="@+id/video_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

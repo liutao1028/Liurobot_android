@@ -1,0 +1,8 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar message;
+!slot <name>;
+!slot <callTo>;
+!start <commands>;
+<commands>:打电话[<callTo>][<name>];
+<callTo>:给;
+<name>:张三|李四;

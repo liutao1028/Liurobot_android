@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button2"
+        android:src="@drawable/skyblue_logo_sohumicroblog_checked" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/button"
+        android:text="扫描" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="10dp"
+        android:text="地图名称:"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:text="地图 I  D :"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="地图1"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/textView3"
+        android:text="00001"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:text="返回" /> 
+        
+
+</RelativeLayout>
